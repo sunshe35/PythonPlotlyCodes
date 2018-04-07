@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Javascript与Plotly</title>
+	</head>
+
+	<body>
+		<div id="myDiv" style="width:600px;height:550px;"></div>
+	</body>
+
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script>
+		// data
+		var data = [{
+			values: [19, 26, 55],
+			labels: ['A', 'B', 'C'],
+			type: 'pie'
+		}];
+
+	   // layout
+		var layout = {
+			height: 400,
+			width: 500
+		};
+
+		Plotly.newPlot('myDiv', data, layout);
+		
+	</script>
+
+</html>

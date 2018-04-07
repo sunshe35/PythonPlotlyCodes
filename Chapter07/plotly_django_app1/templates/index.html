@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plotly嵌入Django案例</title>
+    <style type="text/css">
+    	div.content {
+    		padding: 1em 5em;
+    	}
+    	div.graph {
+    		margin: 10px auto;
+    		width: 70%;
+    	}
+
+    </style>
+</head>
+<body>
+
+<!-- load plotly.js -->
+<script src="static/plotly.min.js"></script>
+
+<div class='content'>
+	<h2>用Python爬虫抓取最新的房价数据</h2>
+	<div>
+		<p>
+		 部分城市的房价迅速上涨，多地出台楼市限制政策。未来房价走势如何？由于影响因素的多样性，目前还没有发现任何一种研究分析能够确切地预测，但我们可以自己动手从网络上抓取房价的最新数据，密切关注最新的房价信息，结合实际情况做出自己的判断。
+		</p>
+		<p>
+			下面数据化分析以链家网为例，利用Python爬虫抓取的在三种户型的平均房价（千/平方米)：
+		</p>
+	</div>
+
+	{% if graph %}
+	<div class='graph'>
+	{{ graph|safe }}
+	</div>
+	{% endif %}
+
+	<div>
+		<p>从图上可以看出，C类户型的平均房价最高，最受欢迎，其次是A类户型，最后是B类户型</p>
+	</div>
+</div>
+
+
+</body>
+</html>

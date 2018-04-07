@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript与Plotly</title>
+  </head>
+  <body>
+   	<div id="myDiv" style="width:600px;height:250px;"></div>  
+  </body>
+  
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+	var trace0 = {
+	  x: [1, 2, 3, 4],
+	  y: [10, 15, 13, 17],
+	  mode:'markers', # 纯散点的绘图
+	  type: 'scatter'
+	};
+
+	var trace1 = {
+	  x: [2, 3, 4, 5],
+	  y: [16, 5, 11, 9],
+	  mode: 'lines',  # 纯曲线的绘图
+	  type: 'scatter'
+	};
+
+	var trace2 = {
+	  x: [1, 2, 3, 4],
+	  y: [12, 9, 15, 12],
+	  mode: 'lines+markers', # 散点+曲线的绘图
+	  type: 'scatter'
+	};
+
+	var data = [trace0, trace1, trace2];
+
+	Plotly.newPlot('myDiv', data);
+    </script>    
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Javascript与Plotly</title>
+	</head>
+
+	<body>
+		<div id="myDiv" style="width:600px;height:550px;"></div>
+	</body>
+
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script>
+		
+		// 饼图的数据源
+		var data = [{
+			x: ['apple', 'orange', 'banana'],
+			y: [20, 11, 25],
+			type: 'bar'
+		}];
+
+		
+		Plotly.newPlot('myDiv', data);
+	</script>
+
+</html>

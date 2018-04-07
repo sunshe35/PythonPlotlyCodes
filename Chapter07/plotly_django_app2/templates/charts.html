@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html> <!--<![endif]-->
+<head>
+    <title>AIR - Premium Bootstrap Admin Template</title>
+
+    <!-- Meta -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- Bootstrap -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Bootstrap Extended -->
+    <link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet"/>
+    <link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet"/>
+    <link href="static/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet"/>
+
+    <!-- JQueryUI v1.9.2 -->
+    <link rel="stylesheet"
+          href="static/theme/scripts/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css"/>
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="static/theme/css/glyphicons.css"/>
+
+    <!-- Bootstrap Extended -->
+    <link rel="stylesheet" href="static/bootstrap/extend/bootstrap-select/bootstrap-select.css"/>
+    <link rel="stylesheet"
+          href="static/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css"/>
+
+    <!-- Uniform -->
+    <link rel="stylesheet" media="screen" href="static/theme/scripts/pixelmatrix-uniform/css/uniform.default.css"/>
+
+    <!-- JQuery v1.8.2 -->
+    <script src="static/theme/scripts/jquery-1.8.2.min.js"></script>
+
+    <!-- Modernizr -->
+    <script src="static/theme/scripts/modernizr.custom.76094.js"></script>
+
+    <!-- MiniColors -->
+    <link rel="stylesheet" media="screen" href="static/theme/scripts/jquery-miniColors/jquery.miniColors.css"/>
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="static/theme/css/style.min.css?1361377748"/>
+
+
+    <!-- LESS 2 CSS -->
+    <script src="static/theme/scripts/less-1.3.3.min.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- load plotly.js -->
+    <script src="static/plotly.min.js"></script>
+</head>
+<body>
+
+<div class="navbar main">
+
+    <div class="container">
+        <div class="row">
+            <div class="span12 relativeWrap">
+
+                <button type="button" class="btn btn-navbar visible-phone">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+
+                <ul id="menu" class="hidden-phone">
+                    <li class="active">
+                        <a href="index.html" class="menuToggle">Overview</a>
+                        <ul class="menu hide">
+                            <li class=""><a href="index.html"><span>Dashboard</span></a></li>
+                            <li class=""><a href="ui.html"><span>UI Elements</span></a></li>
+                            <li class=" active"><a href="charts.html"><span>Charts</span></a></li>
+                            <li class="hasSubmenu">
+                                <a data-toggle="collapse" class="" href="#menu_forms"><span>Forms<i
+                                        class="icon-chevron-right icon-white"></i></span></a>
+                                <ul class="collapse" id="menu_forms">
+                                    <li class=""><a href="form_demo.html"><span>My Account</span></a></li>
+                                    <li class=""><a href="form_elements.html"><span>Form Elements</span></a></li>
+                                    <li class=""><a href="form_validator.html"><span>Form Validator</span></a></li>
+                                    <li class=""><a href="file_managers.html"><span>File Managers</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="tables.html"><span>Tables</span></a>
+                            </li>
+                            <li class=""><a href="calendar.html"><span>Calendar</span></a></li>
+                            <li><a href="login.html"><span>Login</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="finances.html" class="menuToggle">Sections</a>
+                        <ul class="menu hide">
+                            <li class=""><a href="finances.html"><span>Finances</span></a></li>
+                            <li class="hasSubmenu">
+                                <a data-toggle="collapse" href="#menu_ecommerce"><span>Online Shop<i
+                                        class="icon-chevron-right icon-white"></i></span></a>
+                                <ul class="collapse" id="menu_ecommerce">
+                                    <li class=""><a href="products.html"><span>Products</span></a></li>
+                                    <li class=""><a href="product_edit.html"><span>Add product</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="pages.html"><span>Site Pages</span></a></li>
+                            <li class=""><a href="gallery.html"><span>Photo Gallery</span></a></li>
+                            <li class=""><a href="bookings.html"><span>Bookings</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-phone">
+                        <a href="#themer" data-toggle="collapse"><span>Themer</span></a>
+                        <div id="themer" class="collapse">
+                            <div class="wrapper">
+                                <span class="close2">&times; close</span>
+                                <h4>Themer <span>color</span></h4>
+                                <ul>
+                                    <li>Theme: <select id="themer-theme" class="pull-right"></select>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff"
+                                                              data-slider="hue" data-textfield="false"
+                                                              data-position="left" id="themer-primary-cp"/>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    <li>
+                                        <span class="link" id="themer-custom-reset">reset theme</span>
+                                        <span class="pull-right"><label>advanced <input type="checkbox" value="1"
+                                                                                        id="themer-advanced-toggle"/></label></span>
+                                    </li>
+                                </ul>
+                                <div id="themer-getcode" class="hide">
+                                    <div class="separator"></div>
+                                    <button class="btn btn-primary btn-small pull-right btn-icon glyphicons download"
+                                            id="themer-getcode-less"><i></i>Get LESS
+                                    </button>
+                                    <button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download"
+                                            id="themer-getcode-css"><i></i>Get CSS
+                                    </button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden-phone">
+                        <a href="#" data-toggle="dropdown"><img src="static/theme/images/lang/en.png" alt="en"/></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li class="active"><a href="#" title="English"><img src="static/theme/images/lang/en.png"
+                                                                                alt="English"/> English</a></li>
+                            <li><a href="#" title="Romanian"><img src="static/theme/images/lang/ro.png" alt="Romanian"/>
+                                Romanian</a></li>
+                            <li><a href="#" title="Italian"><img src="static/theme/images/lang/it.png" alt="Italian"/>
+                                Italian</a></li>
+                            <li><a href="#" title="French"><img src="static/theme/images/lang/fr.png" alt="French"/>
+                                French</a></li>
+                            <li><a href="#" title="Polish"><img src="static/theme/images/lang/pl.png" alt="Polish"/>
+                                Polish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <span class="profile">
+						<span>
+							<strong>Mr. Awesome</strong>
+							<a href="form_demo.html">edit account</a>
+						</span>
+						<a class="img" href="form_demo.html"><img src="http://www.placehold.it/74x74/232323&text=photo"
+                                                                  alt="Mr. Awesome"/></a>
+					</span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start Content -->
+<div class="container-fluid fixed">
+
+
+    <div id="content">
+        <ul class="breadcrumb">
+            <li><a href="index.html" class="glyphicons home"><i></i> AIR</a></li>
+            <li class="divider"></li>
+            <li>Charts</li>
+        </ul>
+        <div class="separator"></div>
+
+        <h3 class="glyphicons charts"><i></i> Charts<span>| Statistical graphs</span></h3>
+        <div class="separator line"></div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Simple chart</h4>
+            </div>
+
+            {% if graph_basic_plot %}
+                <div>
+                    {{ graph_basic_plot|safe }}
+                </div>
+            {% endif %}
+
+            {#                <div id="placeholder" style="visibility: hidden;height: 1px;"></div>#}
+            {#                <div id="overview" style="visibility: hidden;height: 1px;"></div>#}
+
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_simple" style="height: 250px;"></div>#}
+            {#            </div>#}
+
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Lines chart with fill & without points</h4>
+            </div>
+
+            {% if graph_line_full %}
+                <div>
+                    {{ graph_line_full|safe }}
+                </div>
+            {% endif %}
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_lines_fill_nopoints" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Ordered bars chart</h4>
+            </div>
+
+            {% if graph_bar_chart %}
+                <div>
+                    {{ graph_bar_chart|safe }}
+                </div>
+            {% endif %}
+
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_ordered_bars" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Donut chart</h4>
+            </div>
+
+            {% if graph_bonus_chart %}
+                <div>
+                    {{ graph_bonus_chart|safe }}
+                </div>
+            {% endif %}
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_donut" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Stacked bars chart</h4>
+            </div>
+
+            {% if graph_stacked_bar %}
+                <div>
+                    {{ graph_stacked_bar|safe }}
+                </div>
+            {% endif %}
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_stacked_bars" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Pie chart</h4>
+            </div>
+
+            {% if graph_pie_chart %}
+                <div>
+                    {{ graph_pie_chart|safe }}
+                </div>
+            {% endif %}
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_pie" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        <div class="widget widget-4 widget-body-white">
+            <div class="widget-head">
+                <h4 class="heading">Horizontal bars chart</h4>
+            </div>
+            {% if graph_horizontal_chart %}
+                <div>
+                    {{ graph_horizontal_chart|safe }}
+                </div>
+            {% endif %}
+            {#            <div class="widget-body">#}
+            {#                <div id="chart_horizontal_bars" style="height: 250px;"></div>#}
+            {#            </div>#}
+        </div>
+
+        {#        <div class="widget widget-4 widget-body-white">#}
+        {#            <div class="widget-head">#}
+        {#                <h4 class="heading">Auto updating chart</h4>#}
+        {#            </div>#}
+        {#            <div class="widget-body">#}
+        {#                <div id="chart_live" style="height: 250px;"></div>#}
+        {#            </div>#}
+        {#        </div>#}
+        <br/>
+        <a href="documentation.html" title="">Documentation</a> - Collect from <a href="http://www.cssmoban.com/"
+                                                                                  title="网页模板" target="_blank">网页模板</a>
+        - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+
+    </div>
+
+</div>
+
+<!-- JQueryUI v1.9.2 -->
+<script src="static/theme/scripts/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+<!-- JQueryUI Touch Punch -->
+<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+<script src="static/theme/scripts/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- MiniColors -->
+<script src="static/theme/scripts/jquery-miniColors/jquery.miniColors.js"></script>
+
+<!-- Themer -->
+<script>
+    var themerPrimaryColor = '#71c39a';
+</script>
+<script src="static/theme/scripts/jquery.cookie.js"></script>
+<script src="static/theme/scripts/themer.js"></script>
+
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+<!--  Flot (Charts) JS -->
+<script src="static/theme/scripts/flot/jquery.flot.js" type="text/javascript"></script>
+<script src="static/theme/scripts/flot/jquery.flot.pie.js" type="text/javascript"></script>
+<script src="static/theme/scripts/flot/jquery.flot.tooltip.js" type="text/javascript"></script>
+<script src="static/theme/scripts/flot/jquery.flot.selection.js"></script>
+<script src="static/theme/scripts/flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="static/theme/scripts/flot/jquery.flot.orderBars.js" type="text/javascript"></script>
+
+{##}
+{#<script>#}
+{#    var charts =#}
+{#        {#}
+{#            // init all charts#}
+{#            init: function () {#}
+{##}
+{#                // init simple chart#}
+{#                this.chart_simple.init();#}
+{##}
+{#                // init lines chart with fill & without points#}
+{#                this.chart_lines_fill_nopoints.init();#}
+{##}
+{#                // init ordered bars chart#}
+{#                this.chart_ordered_bars.init();#}
+{##}
+{#                // init donut chart#}
+{#                this.chart_donut.init();#}
+{##}
+{#                // init stacked bars chart#}
+{#                this.chart_stacked_bars.init();#}
+{##}
+{#                // init pie chart#}
+{#                this.chart_pie.init();#}
+{##}
+{#                // init horizontal bars chart#}
+{#                this.chart_horizontal_bars.init();#}
+{##}
+{#                // init live chart#}
+{#                this.chart_live.init();#}
+{#            },#}
+{##}
+{#            // utility class#}
+{#            utility: {#}
+{#                chartColors: ["#71c39a", "#444", "#777", "#999", "#DDD", "#EEE"],#}
+{#                chartBackgroundColors: ["#fff", "#fff"],#}
+{##}
+{#                applyStyle: function (that) {#}
+{#                    that.options.colors = charts.utility.chartColors;#}
+{#                    that.options.grid.backgroundColor = {colors: charts.utility.chartBackgroundColors};#}
+{#                    that.options.grid.borderColor = charts.utility.chartColors[0];#}
+{#                    that.options.grid.color = charts.utility.chartColors[0];#}
+{#                },#}
+{##}
+{##}
+{#                // generate random number for charts#}
+{#                randNum: function () {#}
+{#                    return (Math.floor(Math.random() * (1 + 40 - 20)) ) + 20;#}
+{#                }#}
+{#            },#}
+{##}
+{##}
+{#            // simple chart#}
+{#            chart_simple: {#}
+{#                // data#}
+{#                data: {#}
+{#                    sin: [],#}
+{#                    cos: []#}
+{#                },#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: true,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: true,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    series: {#}
+{#                        grow: {active: false},#}
+{#                        lines: {#}
+{#                            show: true,#}
+{#                            fill: false,#}
+{#                            lineWidth: 4,#}
+{#                            steps: false#}
+{#                        },#}
+{#                        points: {#}
+{#                            show: true,#}
+{#                            radius: 5,#}
+{#                            symbol: "circle",#}
+{#                            fill: true,#}
+{#                            borderColor: "#fff"#}
+{#                        }#}
+{#                    },#}
+{#                    legend: {position: "se"},#}
+{#                    colors: [],#}
+{#                    shadowSize: 1,#}
+{#                    tooltip: true, //activate tooltip#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.3",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    if (this.plot == null) {#}
+{#                        for (var i = 0; i < 14; i += 0.5) {#}
+{#                            this.data.sin.push([i, Math.sin(i)]);#}
+{#                            this.data.cos.push([i, Math.cos(i)]);#}
+{#                        }#}
+{#                    }#}
+{#                    this.plot = $.plot(#}
+{#                        $("#chart_simple"),#}
+{#                        [{#}
+{#                            label: "Sin",#}
+{#                            data: this.data.sin,#}
+{#                            lines: {fillColor: "#DA4C4C"},#}
+{#                            points: {fillColor: "#fff"}#}
+{#                        },#}
+{#                            {#}
+{#                                label: "Cos",#}
+{#                                data: this.data.cos,#}
+{#                                lines: {fillColor: "#444"},#}
+{#                                points: {fillColor: "#fff"}#}
+{#                            }], this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // lines chart with fill & without points#}
+{#            chart_lines_fill_nopoints: {#}
+{#                // chart data#}
+{#                data: {#}
+{#                    d1: [],#}
+{#                    d2: []#}
+{#                },#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: true,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: true,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    series: {#}
+{#                        grow: {active: false},#}
+{#                        lines: {#}
+{#                            show: true,#}
+{#                            fill: true,#}
+{#                            lineWidth: 2,#}
+{#                            steps: false#}
+{#                        },#}
+{#                        points: {show: false}#}
+{#                    },#}
+{#                    legend: {position: "nw"},#}
+{#                    yaxis: {min: 0},#}
+{#                    xaxis: {ticks: 11, tickDecimals: 0},#}
+{#                    colors: [],#}
+{#                    shadowSize: 1,#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.0",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    // generate some data#}
+{#                    this.data.d1 = [[1, 3 + charts.utility.randNum()], [2, 6 + charts.utility.randNum()], [3, 9 + charts.utility.randNum()], [4, 12 + charts.utility.randNum()], [5, 15 + charts.utility.randNum()], [6, 18 + charts.utility.randNum()], [7, 21 + charts.utility.randNum()], [8, 15 + charts.utility.randNum()], [9, 18 + charts.utility.randNum()], [10, 21 + charts.utility.randNum()], [11, 24 + charts.utility.randNum()], [12, 27 + charts.utility.randNum()], [13, 30 + charts.utility.randNum()], [14, 33 + charts.utility.randNum()], [15, 24 + charts.utility.randNum()], [16, 27 + charts.utility.randNum()], [17, 30 + charts.utility.randNum()], [18, 33 + charts.utility.randNum()], [19, 36 + charts.utility.randNum()], [20, 39 + charts.utility.randNum()], [21, 42 + charts.utility.randNum()], [22, 45 + charts.utility.randNum()], [23, 36 + charts.utility.randNum()], [24, 39 + charts.utility.randNum()], [25, 42 + charts.utility.randNum()], [26, 45 + charts.utility.randNum()], [27, 38 + charts.utility.randNum()], [28, 51 + charts.utility.randNum()], [29, 55 + charts.utility.randNum()], [30, 60 + charts.utility.randNum()]];#}
+{#                    this.data.d2 = [[1, charts.utility.randNum() - 5], [2, charts.utility.randNum() - 4], [3, charts.utility.randNum() - 4], [4, charts.utility.randNum()], [5, 4 + charts.utility.randNum()], [6, 4 + charts.utility.randNum()], [7, 5 + charts.utility.randNum()], [8, 5 + charts.utility.randNum()], [9, 6 + charts.utility.randNum()], [10, 6 + charts.utility.randNum()], [11, 6 + charts.utility.randNum()], [12, 2 + charts.utility.randNum()], [13, 3 + charts.utility.randNum()], [14, 4 + charts.utility.randNum()], [15, 4 + charts.utility.randNum()], [16, 4 + charts.utility.randNum()], [17, 5 + charts.utility.randNum()], [18, 5 + charts.utility.randNum()], [19, 2 + charts.utility.randNum()], [20, 2 + charts.utility.randNum()], [21, 3 + charts.utility.randNum()], [22, 3 + charts.utility.randNum()], [23, 3 + charts.utility.randNum()], [24, 2 + charts.utility.randNum()], [25, 4 + charts.utility.randNum()], [26, 4 + charts.utility.randNum()], [27, 5 + charts.utility.randNum()], [28, 2 + charts.utility.randNum()], [29, 2 + charts.utility.randNum()], [30, 3 + charts.utility.randNum()]];#}
+{##}
+{#                    // make chart#}
+{#                    this.plot = $.plot(#}
+{#                        '#chart_lines_fill_nopoints',#}
+{#                        [{#}
+{#                            label: "Visits",#}
+{#                            data: this.data.d1,#}
+{#                            lines: {fillColor: "#fff8f2"},#}
+{#                            points: {fillColor: "#88bbc8"}#}
+{#                        },#}
+{#                            {#}
+{#                                label: "Unique Visits",#}
+{#                                data: this.data.d2,#}
+{#                                lines: {fillColor: "rgba(0,0,0,0.1)"},#}
+{#                                points: {fillColor: "#ed7a53"}#}
+{#                            }],#}
+{#                        this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // ordered bars chart#}
+{#            chart_ordered_bars: {#}
+{#                // chart data#}
+{#                data: null,#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    bars: {#}
+{#                        show: true,#}
+{#                        barWidth: 0.2,#}
+{#                        fill: 1#}
+{#                    },#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: false,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: false,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    series: {#}
+{#                        grow: {active: false}#}
+{#                    },#}
+{#                    legend: {position: "ne"},#}
+{#                    colors: [],#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.0",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    //some data#}
+{#                    var d1 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d1.push([i, parseInt(Math.random() * 30)]);#}
+{##}
+{#                    var d2 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d2.push([i, parseInt(Math.random() * 30)]);#}
+{##}
+{#                    var d3 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d3.push([i, parseInt(Math.random() * 30)]);#}
+{##}
+{#                    var ds = new Array();#}
+{##}
+{#                    ds.push({#}
+{#                        label: "Data One",#}
+{#                        data: d1,#}
+{#                        bars: {order: 1}#}
+{#                    });#}
+{#                    ds.push({#}
+{#                        label: "Data Two",#}
+{#                        data: d2,#}
+{#                        bars: {order: 2}#}
+{#                    });#}
+{#                    ds.push({#}
+{#                        label: "Data Three",#}
+{#                        data: d3,#}
+{#                        bars: {order: 3}#}
+{#                    });#}
+{#                    this.data = ds;#}
+{##}
+{#                    this.plot = $.plot($("#chart_ordered_bars"), this.data, this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // donut chart#}
+{#            chart_donut: {#}
+{#                // chart data#}
+{#                data: [#}
+{#                    {label: "USA", data: 38},#}
+{#                    {label: "Brazil", data: 23},#}
+{#                    {label: "India", data: 15},#}
+{#                    {label: "Turkey", data: 9},#}
+{#                    {label: "France", data: 7},#}
+{#                    {label: "China", data: 5},#}
+{#                    {label: "Germany", data: 3}#}
+{#                ],#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    series: {#}
+{#                        pie: {#}
+{#                            show: true,#}
+{#                            innerRadius: 0.4,#}
+{#                            highlight: {#}
+{#                                opacity: 0.1#}
+{#                            },#}
+{#                            radius: 1,#}
+{#                            stroke: {#}
+{#                                color: '#fff',#}
+{#                                width: 8#}
+{#                            },#}
+{#                            startAngle: 2,#}
+{#                            combine: {#}
+{#                                color: '#EEE',#}
+{#                                threshold: 0.05#}
+{#                            },#}
+{#                            label: {#}
+{#                                show: true,#}
+{#                                radius: 1,#}
+{#                                formatter: function (label, series) {#}
+{#                                    return '<div class="label label-inverse">' + label + '&nbsp;' + Math.round(series.percent) + '%</div>';#}
+{#                                }#}
+{#                            }#}
+{#                        },#}
+{#                        grow: {active: false}#}
+{#                    },#}
+{#                    legend: {show: false},#}
+{#                    grid: {#}
+{#                        hoverable: true,#}
+{#                        clickable: true,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    colors: [],#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.1" + "%",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    this.plot = $.plot($("#chart_donut"), this.data, this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // horizontal bars chart#}
+{#            chart_horizontal_bars: {#}
+{#                // chart data#}
+{#                data: null,#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: false,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: false,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    series: {#}
+{#                        grow: {active: false},#}
+{#                        bars: {#}
+{#                            show: true,#}
+{#                            horizontal: true,#}
+{#                            barWidth: 0.2,#}
+{#                            fill: 1#}
+{#                        }#}
+{#                    },#}
+{#                    legend: {position: "ne"},#}
+{#                    colors: [],#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.0",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    var d1 = [];#}
+{#                    for (var i = 0; i <= 5; i += 1)#}
+{#                        d1.push([parseInt(Math.random() * 30), i]);#}
+{##}
+{#                    var d2 = [];#}
+{#                    for (var i = 0; i <= 5; i += 1)#}
+{#                        d2.push([parseInt(Math.random() * 30), i]);#}
+{##}
+{#                    var d3 = [];#}
+{#                    for (var i = 0; i <= 5; i += 1)#}
+{#                        d3.push([parseInt(Math.random() * 30), i]);#}
+{##}
+{#                    this.data = new Array();#}
+{#                    this.data.push({#}
+{#                        data: d1,#}
+{#                        bars: {#}
+{#                            horizontal: true,#}
+{#                            show: true,#}
+{#                            barWidth: 0.2,#}
+{#                            order: 1#}
+{#                        }#}
+{#                    });#}
+{#                    this.data.push({#}
+{#                        data: d2,#}
+{#                        bars: {#}
+{#                            horizontal: true,#}
+{#                            show: true,#}
+{#                            barWidth: 0.2,#}
+{#                            order: 2#}
+{#                        }#}
+{#                    });#}
+{#                    this.data.push({#}
+{#                        data: d3,#}
+{#                        bars: {#}
+{#                            horizontal: true,#}
+{#                            show: true,#}
+{#                            barWidth: 0.2,#}
+{#                            order: 3#}
+{#                        }#}
+{#                    });#}
+{##}
+{#                    this.plot = $.plot($("#chart_horizontal_bars"), this.data, this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // pie chart#}
+{#            chart_pie: {#}
+{#                // chart data#}
+{#                data: [#}
+{#                    {label: "USA", data: 38},#}
+{#                    {label: "Brazil", data: 23},#}
+{#                    {label: "India", data: 15},#}
+{#                    {label: "Turkey", data: 9},#}
+{#                    {label: "France", data: 7},#}
+{#                    {label: "China", data: 5},#}
+{#                    {label: "Germany", data: 3}#}
+{#                ],#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    series: {#}
+{#                        pie: {#}
+{#                            show: true,#}
+{#                            highlight: {#}
+{#                                opacity: 0.1#}
+{#                            },#}
+{#                            radius: 1,#}
+{#                            stroke: {#}
+{#                                color: '#fff',#}
+{#                                width: 2#}
+{#                            },#}
+{#                            startAngle: 2,#}
+{#                            combine: {#}
+{#                                color: '#353535',#}
+{#                                threshold: 0.05#}
+{#                            },#}
+{#                            label: {#}
+{#                                show: true,#}
+{#                                radius: 1,#}
+{#                                formatter: function (label, series) {#}
+{#                                    return '<div class="label label-inverse">' + label + '&nbsp;' + Math.round(series.percent) + '%</div>';#}
+{#                                }#}
+{#                            }#}
+{#                        },#}
+{#                        grow: {active: false}#}
+{#                    },#}
+{#                    colors: [],#}
+{#                    legend: {show: false},#}
+{#                    grid: {#}
+{#                        hoverable: true,#}
+{#                        clickable: true,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.1" + "%",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    this.plot = $.plot($("#chart_pie"), this.data, this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // stacked bars chart#}
+{#            chart_stacked_bars: {#}
+{#                // chart data#}
+{#                data: null,#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: false,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: true,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    series: {#}
+{#                        grow: {active: false},#}
+{#                        stack: 0,#}
+{#                        lines: {show: false, fill: true, steps: false},#}
+{#                        bars: {show: true, barWidth: 0.5, fill: 1}#}
+{#                    },#}
+{#                    xaxis: {ticks: 11, tickDecimals: 0},#}
+{#                    legend: {position: "ne"},#}
+{#                    colors: [],#}
+{#                    shadowSize: 1,#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "%s : %y.0",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    }#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    var d1 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d1.push([i, parseInt(Math.random() * 30)]);#}
+{##}
+{#                    var d2 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d2.push([i, parseInt(Math.random() * 20)]);#}
+{##}
+{#                    var d3 = [];#}
+{#                    for (var i = 0; i <= 10; i += 1)#}
+{#                        d3.push([i, parseInt(Math.random() * 20)]);#}
+{##}
+{#                    this.data = new Array();#}
+{##}
+{#                    this.data.push({#}
+{#                        label: "Data One",#}
+{#                        data: d1#}
+{#                    });#}
+{#                    this.data.push({#}
+{#                        label: "Data Two",#}
+{#                        data: d2#}
+{#                    });#}
+{#                    this.data.push({#}
+{#                        label: "Data Tree",#}
+{#                        data: d3#}
+{#                    });#}
+{##}
+{#                    this.plot = $.plot($("#chart_stacked_bars"), this.data, this.options);#}
+{#                }#}
+{#            },#}
+{##}
+{#            // live chart#}
+{#            chart_live: {#}
+{#                // chart data#}
+{#                data: [],#}
+{#                totalPoints: 300,#}
+{#                updateInterval: 200,#}
+{##}
+{#                // we use an inline data source in the example, usually data would#}
+{#                // be fetched from a server#}
+{#                getRandomData: function () {#}
+{#                    if (this.data.length > 0)#}
+{#                        this.data = this.data.slice(1);#}
+{##}
+{#                    // do a random walk#}
+{#                    while (this.data.length < this.totalPoints) {#}
+{#                        var prev = this.data.length > 0 ? this.data[this.data.length - 1] : 50;#}
+{#                        var y = prev + Math.random() * 10 - 5;#}
+{#                        if (y < 0)#}
+{#                            y = 0;#}
+{#                        if (y > 100)#}
+{#                            y = 100;#}
+{#                        this.data.push(y);#}
+{#                    }#}
+{##}
+{#                    // zip the generated y values with the x values#}
+{#                    var res = [];#}
+{#                    for (var i = 0; i < this.data.length; ++i)#}
+{#                        res.push([i, this.data[i]])#}
+{#                    return res;#}
+{#                },#}
+{##}
+{#                // will hold the chart object#}
+{#                plot: null,#}
+{##}
+{#                // chart options#}
+{#                options: {#}
+{#                    series: {#}
+{#                        grow: {active: false},#}
+{#                        shadowSize: 0,#}
+{#                        lines: {#}
+{#                            show: true,#}
+{#                            fill: true,#}
+{#                            lineWidth: 2,#}
+{#                            steps: false#}
+{#                        }#}
+{#                    },#}
+{#                    grid: {#}
+{#                        show: true,#}
+{#                        aboveData: false,#}
+{#                        color: "#3f3f3f",#}
+{#                        labelMargin: 5,#}
+{#                        axisMargin: 0,#}
+{#                        borderWidth: 0,#}
+{#                        borderColor: null,#}
+{#                        minBorderMargin: 5,#}
+{#                        clickable: true,#}
+{#                        hoverable: true,#}
+{#                        autoHighlight: false,#}
+{#                        mouseActiveRadius: 20,#}
+{#                        backgroundColor: {}#}
+{#                    },#}
+{#                    colors: [],#}
+{#                    tooltip: true,#}
+{#                    tooltipOpts: {#}
+{#                        content: "Value is : %y.0",#}
+{#                        shifts: {#}
+{#                            x: -30,#}
+{#                            y: -50#}
+{#                        },#}
+{#                        defaultTheme: false#}
+{#                    },#}
+{#                    yaxis: {min: 0, max: 100},#}
+{#                    xaxis: {show: true}#}
+{#                },#}
+{##}
+{#                // initialize#}
+{#                init: function () {#}
+{#                    // apply styling#}
+{#                    charts.utility.applyStyle(this);#}
+{##}
+{#                    this.plot = $.plot($("#chart_live"), [this.getRandomData()], this.options);#}
+{#                    setTimeout(this.update, charts.chart_live.updateInterval);#}
+{#                },#}
+{##}
+{#                // update#}
+{#                update: function () {#}
+{#                    charts.chart_live.plot.setData([charts.chart_live.getRandomData()]);#}
+{#                    charts.chart_live.plot.draw();#}
+{##}
+{#                    setTimeout(charts.chart_live.update, charts.chart_live.updateInterval);#}
+{#                }#}
+{#            }#}
+{#        };#}
+{##}
+{#    $(function () {#}
+{#        // initialize charts#}
+{#        charts.init();#}
+{#    });#}
+{#</script>#}
+
+
+<!-- Resize Script -->
+<script src="static/theme/scripts/jquery.ba-resize.js"></script>
+
+<!-- Uniform -->
+<script src="static/theme/scripts/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+
+<!-- Bootstrap Script -->
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap Extended -->
+<script src="static/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+<script src="static/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+<script src="static/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script src="static/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+<script src="static/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+<script src="static/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"
+        type="text/javascript"></script>
+
+<!-- Custom Onload Script -->
+<script src="static/theme/scripts/load.js"></script>
+
+</body>
+</html>

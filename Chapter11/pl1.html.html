@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript与Plotly</title>
+  </head>
+  <body>
+   	<div id="tester" style="width:600px;height:250px;"></div>  
+  </body>
+  
+    <script src="js/plotly.min.js"></script>
+    <script>
+   		TESTER = document.getElementById('tester');
+		
+		Plotly.plot( TESTER, [{
+			x: [1, 2, 3, 4, 5],
+			y: [1, 2, 4, 8, 16] }], {
+			margin: { t: 0 } } );
+    </script>
+    
+</html>

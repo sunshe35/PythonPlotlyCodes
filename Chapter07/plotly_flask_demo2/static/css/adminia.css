@@ -1,0 +1,424 @@
+/*------------------------------------------------------------------
+
+[Layout Stylesheet]
+
+	Project:		Adminia Admin
+	Version:		1.0
+	Last change:	05/11/2012
+	Assigned to:	Rod Howard (rh)
+
+
+[Table of contents]
+
+	1. Global
+	2. Navbar / .navbar
+	3. Main Nav / #main-nav
+	4. Content / #content
+	5. Footer / #footer
+	6. Widget / .widget
+	7. Miscellaneous
+
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[1. Global]
+*/
+
+body {	
+	font: 13px/1.7em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, arial, sans-serif;
+	
+	background: url(../img/body-bg.png) repeat 0 0;
+}
+
+p {	
+	font: 13px/1.7em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, arial, sans-serif;
+}
+
+h1 {
+	margin-bottom: .25em;
+}
+
+h2 {
+	margin-bottom: .5em;
+	
+	color: #4A515B;
+}
+
+h3 {
+	margin-bottom: .75em;
+	
+	font-weight: 600;
+	color: #F90;
+}
+
+h4, h5, h6 {
+	margin-bottom: 1.25em;
+	
+	color: #666;
+}
+
+hr {
+	border-top-color: #DDD;
+}
+
+input {
+	font: 13px/1.7em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, arial, sans-serif;
+}
+
+
+/*------------------------------------------------------------------
+[2. Navbar / .navbar]
+*/
+
+.navbar {
+	font-size: 12px;
+}
+
+.navbar .brand {
+	position: relative;
+	top: 2px;
+	
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/*------------------------------------------------------------------
+[3. Sidebar Nav / #main-nav]
+*/
+
+#main-nav.nav-tabs.nav-stacked > li {	
+	margin-bottom: 4px;	
+}
+
+#main-nav.nav-tabs.nav-stacked > li > a {	
+	padding: 10px 8px;
+	
+	font-size: 12px;
+	font-weight: 600;
+	color: #4A515B;
+	
+	background: #E9E9E9;
+	background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+	
+	
+	border: 1px solid #D5D5D5;
+	
+	border-radius: 4px;
+}
+
+#main-nav.nav-tabs.nav-stacked > li.active > a,
+#main-nav.nav-tabs.nav-stacked > li > a:hover {	
+	color: #FFF;
+	
+	background: #3C4049;
+	background:-moz-linear-gradient(top, #4A515B 0%, #3C4049 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* IE10+ */
+	background:linear-gradient(top, #4A515B 0%,#3C4049 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
+	
+	border-color: #2B2E33;
+}
+
+#main-nav.nav-tabs.nav-stacked > li:first-child > a,
+#main-nav.nav-tabs.nav-stacked > li:last-child > a {
+	border-radius: 5px;
+}
+
+#main-nav.nav-tabs.nav-stacked li [class^="icon-"],
+#main-nav.nav-tabs.nav-stacked li [class*=" icon-"] {
+	position: relative;
+	top: 1px;
+	
+	margin-right: .35em;
+	
+	font-size: 15px;
+}
+
+#main-nav.nav-tabs.nav-stacked li .label {
+	position: relative;
+	top: 2px;
+}
+
+
+/*------------------------------------------------------------------
+[4. Content / #content]
+*/
+
+#content {	
+	padding-top: 70px;
+}
+
+
+/*------------------------------------------------------------------
+[5. Footer / #footer]
+*/
+
+#footer {
+	margin-bottom: 1em;
+}
+
+
+
+/*------------------------------------------------------------------
+[6. Widget / .widget]
+*/
+
+.widget {
+	
+	position: relative;
+	clear: both;
+	
+	width: auto;
+	
+	margin-bottom: 2em;
+}
+	
+.widget-header {
+	
+	position: relative;
+	
+	height: 40px;
+	line-height: 40px;
+	
+	background: #E9E9E9;
+	background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+	
+	
+	border: 1px solid #D5D5D5;
+	
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	
+	-webkit-background-clip: padding-box;
+}	
+	
+	.widget-header h3 {
+		
+		position: relative;
+		top: 2px;
+		left: 10px;
+		
+		display: inline-block;
+		margin-right: 3em;
+		
+		font-size: 14px;
+		font-weight: 800;
+		color: #555;
+		line-height: 18px;
+		
+		text-shadow: 1px 1px 2px rgba(255,255,255,.5);
+	}
+	
+		.widget-header [class^="icon-"], .widget-header [class*=" icon-"] 
+		{
+			
+			display: inline-block;
+			margin-left: 13px;
+			margin-right: -2px;
+			
+			font-size: 16px;
+			color: #555;
+			vertical-align: middle;
+			
+			
+			
+		}
+
+
+
+
+.widget-content {
+	padding: 20px 15px 15px;
+	
+	background: #FFF;
+	
+	
+	border: 1px solid #D5D5D5;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.widget-header+.widget-content {
+	border-top: none;
+	
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.widget-nopad .widget-content {
+	padding: 0;
+}
+
+/* Widget Content Clearfix */	
+.widget-content:before,
+.widget-content:after {
+    content:"";
+    display:table;
+}
+
+.widget-content:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.widget-content {
+    zoom:1;
+}
+
+/* Widget Table */
+
+.widget-table .widget-content {
+	padding: 0;
+}
+
+.widget-table .table {
+	margin-bottom: 0;
+	
+	border: none;
+}
+
+.widget-table .table tr td:first-child {
+	border-left: none;
+}
+
+.widget-table .table tr th:first-child {
+	border-left: none;
+}
+
+
+
+/*------------------------------------------------------------------
+[7. Account / .account-container]
+*/
+
+.account-container {
+	display: table;
+}
+
+.account-avatar,
+.account-details {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.account-avatar {
+	padding-right: 1em;
+}
+
+.account-avatar img {
+	width: 55px;
+	height: 55px;
+}
+
+.account-details {
+}
+
+.account-details span {
+	display: block;
+}
+
+.account-details .account-name {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.account-details .account-role {
+	color: #888;
+}
+
+.account-details .account-actions {
+	color: #BBB;
+}
+
+.account-details a {
+	font-size: 11px;
+}
+
+
+
+/*------------------------------------------------------------------
+[8. Miscellaneous]
+*/
+
+.chart-holder {
+	position: relative;
+	
+	display: block;
+	
+	width: 100%;
+	height: 325px;
+}
+
+
+.page-title {
+	padding: 5px 10px;
+	margin-bottom: 1.25em;
+	
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFF;
+	
+	background: #3C4049;
+	background:-moz-linear-gradient(top, #4A515B 0%, #3C4049 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049)); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Opera11.10+ */
+	background:-ms-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* IE10+ */
+	background:linear-gradient(top, #4A515B 0%,#3C4049 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
+	
+	border-radius: 4px;
+	
+	text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+	.page-title i {
+		margin-right: .4em;
+	}
+
+
+
+.table .action-td {
+	width: 80px;
+	
+	text-align: center;
+}
+
+
+
+
+
+

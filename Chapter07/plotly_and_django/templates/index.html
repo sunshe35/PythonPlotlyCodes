@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plotly嵌入Django案例</title>
+</head>
+<body>
+
+<!-- load plotly.js -->
+<script src="static/plotly.min.js"></script>
+
+{% if graph %}
+<div style="width:600;height:500">
+{{ graph|safe }}
+</div>
+{% endif %}
+
+
+{% if graph2 %}
+<div>
+{{ graph2|safe }}
+</div>
+{% endif %}
+
+</body>
+</html>

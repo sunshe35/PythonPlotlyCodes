@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<title>AIR - Premium Bootstrap Admin Template</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<!-- Bootstrap -->
+	<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" />
+	<link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="static/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" />
+	
+	<!-- JQueryUI v1.9.2 -->
+	<link rel="stylesheet" href="static/theme/scripts/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	
+	<!-- Glyphicons -->
+	<link rel="stylesheet" href="static/theme/css/glyphicons.css" />
+	
+	<!-- Bootstrap Extended -->
+	<link rel="stylesheet" href="static/bootstrap/extend/bootstrap-select/bootstrap-select.css" />
+	<link rel="stylesheet" href="static/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+	
+	<!-- Uniform -->
+	<link rel="stylesheet" media="screen" href="static/theme/scripts/pixelmatrix-uniform/css/uniform.default.css" />
+
+	<!-- JQuery v1.8.2 -->
+	<script src="static/theme/scripts/jquery-1.8.2.min.js"></script>
+	
+	<!-- Modernizr -->
+	<script src="static/theme/scripts/modernizr.custom.76094.js"></script>
+	
+	<!-- MiniColors -->
+	<link rel="stylesheet" media="screen" href="static/theme/scripts/jquery-miniColors/jquery.miniColors.css" />
+	
+	<!-- Theme -->
+	<link rel="stylesheet" href="static/theme/css/style.min.css?1361377752" />
+	
+	
+	
+	<!-- LESS 2 CSS -->
+	<script src="static/theme/scripts/less-1.3.3.min.js"></script>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+	
+	<div class="navbar main">
+	
+		<div class="container">
+			<div class="row">
+				<div class="span12 relativeWrap">
+				
+					<button type="button" class="btn btn-navbar visible-phone">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+		
+					<ul id="menu" class="hidden-phone">
+						<li class="active">
+							<a href="index.html" class="menuToggle">Overview</a>
+							<ul class="menu hide">
+								<li class=""><a href="index.html"><span>Dashboard</span></a></li>
+								<li class=""><a href="ui.html"><span>UI Elements</span></a></li>
+								<li class=""><a href="charts.html"><span>Charts</span></a></li>
+								<li class="hasSubmenu active">
+									<a data-toggle="collapse" class="" href="#menu_forms"><span>Forms<i class="icon-chevron-right icon-white"></i></span></a>
+									<ul class="collapse in" id="menu_forms">
+										<li class=" active"><a href="form_demo.html"><span>My Account</span></a></li>
+										<li class=""><a href="form_elements.html"><span>Form Elements</span></a></li>
+										<li class=""><a href="form_validator.html"><span>Form Validator</span></a></li>
+										<li class=""><a href="file_managers.html"><span>File Managers</span></a></li>
+									</ul>
+								</li>
+								<li class="">
+									<a href="tables.html"><span>Tables</span></a>
+								</li>
+								<li class=""><a href="calendar.html"><span>Calendar</span></a></li>
+								<li><a href="login.html"><span>Login</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="finances.html" class="menuToggle">Sections</a>
+							<ul class="menu hide">
+								<li class=""><a href="finances.html"><span>Finances</span></a></li>
+								<li class="hasSubmenu">
+									<a data-toggle="collapse" href="#menu_ecommerce"><span>Online Shop<i class="icon-chevron-right icon-white"></i></span></a>
+									<ul class="collapse" id="menu_ecommerce">
+										<li class=""><a href="products.html"><span>Products</span></a></li>
+										<li class=""><a href="product_edit.html"><span>Add product</span></a></li>
+									</ul>
+								</li>
+								<li class=""><a href="pages.html"><span>Site Pages</span></a></li>
+								<li class=""><a href="gallery.html"><span>Photo Gallery</span></a></li>
+								<li class=""><a href="bookings.html"><span>Bookings</span></a></li>
+							</ul>
+						</li>
+												<li class="hidden-phone">
+							<a href="#themer" data-toggle="collapse"><span>Themer</span></a>
+							<div id="themer" class="collapse">
+								<div class="wrapper">
+									<span class="close2">&times; close</span>
+									<h4>Themer <span>color</span></h4>
+									<ul>
+										<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+										<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+										<li>
+											<span class="link" id="themer-custom-reset">reset theme</span>
+											<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+										</li>
+									</ul>
+									<div id="themer-getcode" class="hide">
+										<div class="separator"></div>
+										<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+										<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+												<li class="hidden-phone">
+							<a href="#" data-toggle="dropdown"><img src="static/theme/images/lang/en.png" alt="en" /></a>
+					    	<ul class="dropdown-menu pull-right">
+					      		<li class="active"><a href="#" title="English"><img src="static/theme/images/lang/en.png" alt="English" /> English</a></li>
+					      		<li><a href="#" title="Romanian"><img src="static/theme/images/lang/ro.png" alt="Romanian" /> Romanian</a></li>
+					      		<li><a href="#" title="Italian"><img src="static/theme/images/lang/it.png" alt="Italian" /> Italian</a></li>
+					      		<li><a href="#" title="French"><img src="static/theme/images/lang/fr.png" alt="French" /> French</a></li>
+					      		<li><a href="#" title="Polish"><img src="static/theme/images/lang/pl.png" alt="Polish" /> Polish</a></li>
+					    	</ul>
+						</li>
+					</ul>
+					
+					<span class="profile">
+						<span>
+							<strong>Mr. Awesome</strong>
+							<a href="form_demo.html">edit account</a>
+						</span>
+						<a class="img" href="form_demo.html"><img src="http://www.placehold.it/74x74/232323&text=photo" alt="Mr. Awesome" /></a>
+					</span>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Start Content -->
+	<div class="container-fluid fixed">
+		
+				
+		<div id="content"><ul class="breadcrumb">
+	<li><a href="index.html" class="glyphicons home"><i></i> AIR</a></li>
+	<li class="divider"></li>
+	<li>Forms</li>
+	<li class="divider"></li>
+	<li>Demo Forms</li>
+</ul>
+<div class="separator"></div>
+
+<!-- <h3 class="glyphicons user"><i></i> My Account</h3> -->
+
+<div class="widget widget-2 widget-tabs widget-tabs-2 tabs-right border-bottom-none">
+	<div class="widget-head">
+		<ul>
+			<li class="active"><a class="glyphicons settings" href="#account-settings" data-toggle="tab"><i></i>Account settings</a></li>
+			<li><a class="glyphicons user" href="#account-details" data-toggle="tab"><i></i>Account details</a></li>
+		</ul>
+	</div>
+</div>
+	
+<form class="form-horizontal" />
+<div class="tab-content" style="padding: 0;">
+	<div class="tab-pane" id="account-details">
+	
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="control-group">
+					<label class="control-label">First name</label>
+					<div class="controls">
+						<input type="text" value="John" class="span10" />
+						<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="First name is mandatory"><i></i></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Last name</label>
+					<div class="controls">
+						<input type="text" value="Doe" class="span10" />
+						<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Last name is mandatory"><i></i></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Date of birth</label>
+					<div class="controls">
+						<div class="input-append">
+							<input type="text" id="datepicker" class="span12" value="13/06/1988" />
+							<span class="add-on glyphicons calendar"><i></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="control-group">
+					<label class="control-label">Gender</label>
+					<div class="controls">
+						<select class="span12">
+							<option />Male
+							<option />Female
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Age</label>
+					<div class="controls">
+						<input type="text" value="25" class="input-mini" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="separator bottom" />
+		<div class="control-group row-fluid">
+			<label class="control-label">About me</label>
+			<div class="controls">
+				<textarea id="mustHaveId" class="wysihtml5 span12" rows="5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</textarea>
+			</div>
+		</div>
+		<div class="form-actions" style="margin: 0;">
+			<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok"><i></i>Save changes</button>
+			<button type="button" class="btn btn-icon btn-default glyphicons circle_remove"><i></i>Cancel</button>
+		</div>
+	</div>
+	<div class="tab-pane active" id="account-settings">
+		<div class="row-fluid">
+			<div class="span3">
+				<strong>Change password</strong>
+				<p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="span9">
+				<label for="inputUsername">Username</label>
+				<input type="text" id="inputUsername" class="span10" value="john.doe2012" disabled="disabled" />
+				<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Username can't be changed"><i></i></span>
+				<div class="separator"></div>
+						
+				<label for="inputPasswordOld">Old password</label>
+				<input type="password" id="inputPasswordOld" class="span10" value="" placeholder="Leave empty for no change" />
+				<span style="margin: 0;" class="btn-action single glyphicons circle_question_mark" data-toggle="tooltip" data-placement="top" data-original-title="Leave empty if you don't wish to change the password"><i></i></span>
+				<div class="separator"></div>
+				
+				<label for="inputPasswordNew">New password</label>
+				<input type="password" id="inputPasswordNew" class="span12" value="" placeholder="Leave empty for no change" />
+				<div class="separator"></div>
+				
+				<label for="inputPasswordNew2">Repeat new password</label>
+				<input type="password" id="inputPasswordNew2" class="span12" value="" placeholder="Leave empty for no change" />
+				<div class="separator"></div>
+			</div>
+		</div>
+		<hr class="separator line" />
+		<div class="row-fluid">
+			<div class="span3">
+				<strong>Contact details</strong>
+				<p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div>
+			<div class="span9">
+				<div class="row-fluid">
+				<div class="span6">
+					<label for="inputPhone">Phone</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons phone"><i></i></span>
+						<input type="text" id="inputPhone" class="input-large" placeholder="01234567897" />
+					</div>
+					<div class="separator"></div>
+						
+					<label for="inputEmail">E-mail</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons envelope"><i></i></span>
+						<input type="text" id="inputEmail" class="input-large" placeholder="contact@mosaicpro.biz" />
+					</div>
+					<div class="separator"></div>
+						
+					<label for="inputWebsite">Website</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons link"><i></i></span>
+						<input type="text" id="inputWebsite" class="input-large" placeholder="http://www.mosaicpro.biz" />
+					</div>
+					<div class="separator"></div>
+				</div>
+				<div class="span6">
+					<label for="inputFacebook">Facebook</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons facebook"><i></i></span>
+						<input type="text" id="inputFacebook" class="input-large" placeholder="/mosaicpro" />
+					</div>
+					<div class="separator"></div>
+					
+					<label for="inputTwitter">Twitter</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons twitter"><i></i></span>
+						<input type="text" id="inputTwitter" class="input-large" placeholder="/mosaicpro" />
+					</div>
+					<div class="separator"></div>
+					
+					<label for="inputSkype">Skype ID</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons skype"><i></i></span>
+						<input type="text" id="inputSkype" class="input-large" placeholder="mySkypeID" />
+					</div>
+					<div class="separator"></div>
+					
+					<label for="inputYahoo">Yahoo ID</label>
+					<div class="input-prepend">
+						<span class="add-on glyphicons yahoo"><i></i></span>
+						<input type="text" id="inputYahoo" class="input-large" placeholder="myYahooID" />
+					</div>
+					<div class="separator"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-actions" style="margin: 0; padding-right: 0;">
+			<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok pull-right"><i></i>Save changes</button>
+		</div>
+		
+	</div>
+</div>
+</form>
+<br />
+		
+				<br />
+		<a href="documentation.html" title="">Documentation</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+				
+		</div>
+		
+	</div>
+	
+	<!-- JQueryUI v1.9.2 -->
+	<script src="static/theme/scripts/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="static/theme/scripts/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- MiniColors -->
+	<script src="static/theme/scripts/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = '#71c39a';
+	</script>
+	<script src="static/theme/scripts/jquery.cookie.js"></script>
+	<script src="static/theme/scripts/themer.js"></script>
+	
+	
+	
+	<!-- Resize Script -->
+	<script src="static/theme/scripts/jquery.ba-resize.js"></script>
+	
+	<!-- Uniform -->
+	<script src="static/theme/scripts/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- Bootstrap Script -->
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="static/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<script src="static/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+	<script src="static/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="static/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js" type="text/javascript"></script>
+	
+	<!-- Custom Onload Script -->
+	<script src="static/theme/scripts/load.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<title>AIR - Premium Bootstrap Admin Template</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<!-- Bootstrap -->
+	<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" />
+	<link href="static/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="static/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" />
+	
+	<!-- JQueryUI v1.9.2 -->
+	<link rel="stylesheet" href="static/theme/scripts/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	
+	<!-- Glyphicons -->
+	<link rel="stylesheet" href="static/theme/css/glyphicons.css" />
+	
+	<!-- Bootstrap Extended -->
+	<link rel="stylesheet" href="static/bootstrap/extend/bootstrap-select/bootstrap-select.css" />
+	<link rel="stylesheet" href="static/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+	
+	<!-- Uniform -->
+	<link rel="stylesheet" media="screen" href="static/theme/scripts/pixelmatrix-uniform/css/uniform.default.css" />
+
+	<!-- JQuery v1.8.2 -->
+	<script src="static/theme/scripts/jquery-1.8.2.min.js"></script>
+	
+	<!-- Modernizr -->
+	<script src="static/theme/scripts/modernizr.custom.76094.js"></script>
+	
+	<!-- MiniColors -->
+	<link rel="stylesheet" media="screen" href="static/theme/scripts/jquery-miniColors/jquery.miniColors.css" />
+	
+	<!-- google-code-prettify -->
+	<link href="static/theme/scripts/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+	
+	<!-- Theme -->
+	<link rel="stylesheet" href="static/theme/css/style.min.css?1361377821" />
+	
+	
+	
+	<!-- LESS 2 CSS -->
+	<script src="static/theme/scripts/less-1.3.3.min.js"></script>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+	
+	<div class="navbar main">
+	
+		<div class="container">
+			<div class="row">
+				<div class="span12 relativeWrap">
+				
+					<button type="button" class="btn btn-navbar visible-phone">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+		
+					<ul id="menu" class="hidden-phone">
+						<li>
+							<a href="index.html" class="menuToggle">Overview</a>
+							<ul class="menu hide">
+								<li class=""><a href="index.html"><span>Dashboard</span></a></li>
+								<li class=""><a href="ui.html"><span>UI Elements</span></a></li>
+								<li class=""><a href="charts.html"><span>Charts</span></a></li>
+								<li class="hasSubmenu">
+									<a data-toggle="collapse" class="" href="#menu_forms"><span>Forms<i class="icon-chevron-right icon-white"></i></span></a>
+									<ul class="collapse" id="menu_forms">
+										<li class=""><a href="form_demo.html"><span>My Account</span></a></li>
+										<li class=""><a href="form_elements.html"><span>Form Elements</span></a></li>
+										<li class=""><a href="form_validator.html"><span>Form Validator</span></a></li>
+										<li class=""><a href="file_managers.html"><span>File Managers</span></a></li>
+									</ul>
+								</li>
+								<li class="">
+									<a href="tables.html"><span>Tables</span></a>
+								</li>
+								<li class=""><a href="calendar.html"><span>Calendar</span></a></li>
+								<li><a href="login.html"><span>Login</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="finances.html" class="menuToggle">Sections</a>
+							<ul class="menu hide">
+								<li class=""><a href="finances.html"><span>Finances</span></a></li>
+								<li class="hasSubmenu">
+									<a data-toggle="collapse" href="#menu_ecommerce"><span>Online Shop<i class="icon-chevron-right icon-white"></i></span></a>
+									<ul class="collapse" id="menu_ecommerce">
+										<li class=""><a href="products.html"><span>Products</span></a></li>
+										<li class=""><a href="product_edit.html"><span>Add product</span></a></li>
+									</ul>
+								</li>
+								<li class=""><a href="pages.html"><span>Site Pages</span></a></li>
+								<li class=""><a href="gallery.html"><span>Photo Gallery</span></a></li>
+								<li class=""><a href="bookings.html"><span>Bookings</span></a></li>
+							</ul>
+						</li>
+												<li class="hidden-phone">
+							<a href="#themer" data-toggle="collapse"><span>Themer</span></a>
+							<div id="themer" class="collapse">
+								<div class="wrapper">
+									<span class="close2">&times; close</span>
+									<h4>Themer <span>color</span></h4>
+									<ul>
+										<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+										<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+										<li>
+											<span class="link" id="themer-custom-reset">reset theme</span>
+											<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+										</li>
+									</ul>
+									<div id="themer-getcode" class="hide">
+										<div class="separator"></div>
+										<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+										<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+												<li class="hidden-phone">
+							<a href="#" data-toggle="dropdown"><img src="static/theme/images/lang/en.png" alt="en" /></a>
+					    	<ul class="dropdown-menu pull-right">
+					      		<li class="active"><a href="#" title="English"><img src="static/theme/images/lang/en.png" alt="English" /> English</a></li>
+					      		<li><a href="#" title="Romanian"><img src="static/theme/images/lang/ro.png" alt="Romanian" /> Romanian</a></li>
+					      		<li><a href="#" title="Italian"><img src="static/theme/images/lang/it.png" alt="Italian" /> Italian</a></li>
+					      		<li><a href="#" title="French"><img src="static/theme/images/lang/fr.png" alt="French" /> French</a></li>
+					      		<li><a href="#" title="Polish"><img src="static/theme/images/lang/pl.png" alt="Polish" /> Polish</a></li>
+					    	</ul>
+						</li>
+					</ul>
+					
+					<span class="profile">
+						<span>
+							<strong>Mr. Awesome</strong>
+							<a href="form_demo.html">edit account</a>
+						</span>
+						<a class="img" href="form_demo.html"><img src="http://www.placehold.it/74x74/232323&text=photo" alt="Mr. Awesome" /></a>
+					</span>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Start Content -->
+	<div class="container-fluid fixed">
+		
+				
+		<div id="content"><!-- Documentation -->
+<section class="documentation">
+	<div class="row-fluid">
+		<div class="span9">
+				
+			<!-- Documentation CONTENT -->
+			<h1>Documentation</h1>
+<hr class="separator bottom" />
+<p>AIR is a fully responsive html template, perfect for anyone
+	looking to start a backend system with a modern interface. No more
+	separate websites for mobile, as this theme will adapt seamlessly to
+	any device screen and on top of that it's HD / retina ready.</p>
+
+<p>Trough this documentation we have laid out information about using
+	AIR and in-depth customizing of elements in the item.</p>
+
+<h3>Getting started</h3>
+<hr class="separator bottom" />
+<p>
+	Find your way around AIR with it's available theme &amp; layout
+	options and learn how to change to a custom theme, the menu position
+	&amp; size, allow or disallow skin or menu customization options from
+	the browser etc. <a href="documentation/getting-started/files.html" class="glyphicons single share"><i></i>Getting Started</a>
+</p>
+
+<h3>Customization Guide</h3>
+<hr class="separator bottom" />
+<p>A complete showcase of each element and editable components is shown
+	here along with detailed description and several ideas on how to get
+	the best and fastest workflow when editing AIR. <a href="documentation/customization-guide/grid-system.html" class="glyphicons single share"><i></i>Customization Guide</a></p>
+			<!-- Documentation CONTENT END -->
+				
+		</div>
+		<div class="span3">
+			<div class="widget widget-2 primary widget-body-white">
+				<div class="widget-head">
+					<h4 class="heading glyphicons circle_question_mark"><i></i> Documentation</h4>
+				</div>
+				<div class="widget-body list list-2">
+					<ul>
+						<li class="active"><a href="documentation.html" title="" class="glyphicons link"><i></i>Overview</a></li>
+						<li class="hasSubmenu">
+							<a href="documentation/getting-started/files.html" title="" class="glyphicons link"><i></i>Getting Started</a>
+							<ul>
+								<li><a href="documentation/getting-started/files.html" title="">What's in the package</a></li>
+								<li><a href="documentation/getting-started/config.html" title="">Configuration</a></li>
+								<li><a href="documentation/getting-started/lang.html" title="">Translations</a></li>
+							</ul>
+						</li>
+						<li class="hasSubmenu">
+							<a href="documentation/customization-guide/grid-system.html" title="" class="glyphicons link"><i></i>Customization Guide</a>
+							<ul>
+								<li><a href="documentation/customization-guide/grid-system.html" title="">Grid System</a></li>
+								<li><a href="documentation/customization-guide/buttons.html" title="">Buttons</a></li>
+								<li><a href="documentation/customization-guide/icons.html" title="">Icons</a></li>
+								<li><a href="documentation/customization-guide/tables.html" title="">Tables</a></li>
+								<li><a href="documentation/customization-guide/widgets.html" title="">Widgets</a></li>
+								<li><a href="documentation/customization-guide/tabs.html" title="">Tabs</a></li>
+								<li><a href="documentation/customization-guide/elements.html" title="">Other</a></li>
+							</ul>
+						</li>
+						<li><a href="documentation/credits.html" title="" class="glyphicons link"><i></i>Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Documentation END -->		
+				
+		</div>
+		
+	</div>
+	
+	<!-- JQueryUI v1.9.2 -->
+	<script src="static/theme/scripts/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="static/theme/scripts/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- MiniColors -->
+	<script src="static/theme/scripts/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = '#71c39a';
+	</script>
+	<script src="static/theme/scripts/jquery.cookie.js"></script>
+	<script src="static/theme/scripts/themer.js"></script>
+	
+	
+	
+	<!-- Resize Script -->
+	<script src="static/theme/scripts/jquery.ba-resize.js"></script>
+	
+	<!-- Uniform -->
+	<script src="static/theme/scripts/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- Bootstrap Script -->
+	<script src="static/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="static/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<script src="static/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+	<script src="static/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="static/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootbox.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js" type="text/javascript"></script>
+	<script src="static/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js" type="text/javascript"></script>
+	
+	<!-- Custom Onload Script -->
+	<script src="static/theme/scripts/load.js"></script>
+	
+	<!-- google-code-prettify -->
+	<script src="static/theme/scripts/google-code-prettify/prettify.js"></script>
+	<script>
+	$(function(){
+		prettyPrint();
+	});
+	</script>
+	
+</body>
+</html>
