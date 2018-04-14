@@ -1,8 +1,6 @@
 # 2.11-2 Basic Pie Chart
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 pyplt = py.offline.plot
 labels = ['完成','未完成']

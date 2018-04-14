@@ -46,4 +46,4 @@ ax3.set_title('不同样本容量')
 fig.tight_layout()
 #使图形紧凑
 fig1= plt.gcf()
-plot_url = pympl(fig1,filename=r'E:/tmp/bar_2.html', show_link=False,resize=True)
+plot_url = pympl(fig1,filename=r'tmp/bar_2.html', show_link=False,resize=True)

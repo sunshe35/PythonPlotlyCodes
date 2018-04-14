@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 
 """
-Module implementing MainWindow.
+注意，本案例需要PyQt5.6以及以下版本才能运行。
+否则会提示 cannot import name 'QtWebKitWidgets'
 """
 
+
+"""
+请注意是PyQt5.6以及以下！！！
+请注意是PyQt5.6以及以下！！！
+请注意是PyQt5.6以及以下！！！
+"""
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
 

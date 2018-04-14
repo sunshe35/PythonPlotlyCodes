@@ -303,7 +303,11 @@ class zwQuantX(object):
         qx.downMaxDay = group['downDay'].count().max()
 
         '''计算回撤的最高点位'''
+        import pickle
+        with open("test_zwdf.pkl", "wb") as file:
+            pickle.dump(df, file)
         idxmax = df.val.idxmax()
+        
         qx.downHigh = df.iloc[idxmax, :]['val']
 
         '''计算回撤的最高点位时间'''

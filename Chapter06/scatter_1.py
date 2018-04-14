@@ -29,4 +29,4 @@ lValue = x
 ax1.scatter(x,y,c='r',s= 100,linewidths=lValue,marker='o')
 #设置图标
 plt.legend('x1')
-plot_url = pympl(fig,filename=r'E:/tmp/scatter_1.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/scatter_1.html', show_link=False,resize=True)

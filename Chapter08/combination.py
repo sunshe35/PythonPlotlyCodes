@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Module implementing MainWindow.
+注意，本案例需要PyQt5.7以及以上版本才能运行。
+否则会提示 No module named 'PyQt5.QtWebEngineWidgets'
 """
 
 import pandas as pd

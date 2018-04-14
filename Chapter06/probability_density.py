@@ -44,4 +44,4 @@ ax.set_title(r'柱状图IQ: $\mu=100$, $\sigma=15$')
 #设置标题
 fig.tight_layout()
 #产生紧凑的图片
-plot_url = pympl(fig,filename=r'E:/tmp/probability_density.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/probability_density.html', show_link=False,resize=True)

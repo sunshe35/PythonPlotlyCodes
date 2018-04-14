@@ -11,5 +11,5 @@ df_sample = df[100:120]
 
 
 table = FF.create_table(df_sample, index=True, index_title='Date')
-pyplt(table, filename=r'tmp\pandas_table', show_link=False)
+pyplt(table, filename=r'tmp\table_pandas.html', show_link=False)
 

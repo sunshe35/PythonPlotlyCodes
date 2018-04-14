@@ -1,9 +1,6 @@
 # 2.7-1 基本示例
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
-import pandas as pd
-from plotly import tools
 # Horizontal Bar Charts in Python
 pyplt = py.offline.plot
 data = [go.Bar(

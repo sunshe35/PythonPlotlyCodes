@@ -46,8 +46,8 @@ layout = pygo.Layout(
     xaxis=pygo.XAxis(tickangle=-15),
 
 )
-fig = pygo.Figure(data=xdat, layout=layout,filename=r'tmp\scatter_apply.html')
-pyplt(fig)
+fig = pygo.Figure(data=xdat, layout=layout)
+pyplt(fig,filename=r'tmp\scatter_apply.html')
 #
 print('ok')
 

@@ -1,8 +1,6 @@
 # 2.11-3 Styled Pie Chart
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 pyplt = py.offline.plot
 labels = ['上海国际集团有限公司', '中国移动通信集团',\
@@ -21,5 +19,5 @@ trace = [go.Pie(labels = labels,
                 textfont = dict(size = 30, color = 'white'),
                 marker = dict(colors = colors, 
                     line = dict(color = '#000000', width = 2)))]
-fig = go.Figure(data = trace, layout = layout)
+fig = go.Figure(data = trace)
 pyplt(trace, filename='tmp/styled_pie_chart.html')

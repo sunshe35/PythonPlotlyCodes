@@ -1,6 +1,5 @@
 # 2.8-1 基本示例
 import plotly as py
-import pandas as pd
 import plotly.figure_factory as ff
 
 # Simple Gantt Chart

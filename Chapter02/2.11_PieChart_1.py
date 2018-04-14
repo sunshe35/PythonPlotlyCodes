@@ -1,8 +1,6 @@
 # 2.11-1 Basic Pie Chart
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 pyplt = py.offline.plot
 labels = ['股票','债券','现金','衍生品','其它']

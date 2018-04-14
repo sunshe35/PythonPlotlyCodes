@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # 2.6-6 应用案例
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
 
@@ -16,7 +15,7 @@ xtr = go.Bar(
 xdat = go.Data([xtr])
 layout = go.Layout(
     title = '成交量volume--15分钟分时数据',
-    xaxis = go.XAxis(  tickangle=-15    ),
+    xaxis = go.XAxis(tickangle=-15),
 )
 fig = go.Figure(data=xdat, layout=layout)
 pyplt(fig, filename='tmp/barchart_apply.html')

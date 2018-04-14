@@ -1,8 +1,6 @@
 # 2.5-4 应用案例
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 pyplt = py.offline.plot
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

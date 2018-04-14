@@ -24,4 +24,4 @@ for color in ['red', 'green', 'blue']:
 ax.legend()
 ax.grid(True)
 #设置网格
-plot_url = pympl(fig,filename=r'E:/tmp/scatter_2.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/scatter_2.html', show_link=False,resize=True)

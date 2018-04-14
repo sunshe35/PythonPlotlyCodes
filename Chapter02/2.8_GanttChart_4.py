@@ -1,8 +1,6 @@
 # 2.8-4 应用案例
 import plotly as py
-import pandas as pd
 import plotly.figure_factory as ff
-# Using Hours and Minutes in Times
 pyplt = py.offline.plot
 
 df = [
@@ -25,5 +23,5 @@ colors = dict(Cardio = 'rgb(46, 137, 205)',
               Rest = 'rgb(107, 127, 135)')
 
 fig = ff.create_gantt(df, colors = colors, index_col = 'Resource', title = 'Daily Schedule',
-                      show_colorbar = True, bar_width = 0.8, showgrid_x = True, showgrid_y = True)
+                      bar_width = 0.8, showgrid_x = True, showgrid_y = True)
 pyplt(fig, filename='tmp/gantt-hours-minutes.html')

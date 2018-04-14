@@ -1,8 +1,6 @@
 # 2.7-2 应用案例
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
-import pandas as pd
 from plotly import tools
 # Colored Horizontal Bar Chart
 pyplt = py.offline.plot

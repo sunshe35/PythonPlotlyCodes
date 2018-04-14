@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # 2.6.1 基本示例
-
 import plotly as py
 import plotly.graph_objs as go
 pyplt = py.offline.plot

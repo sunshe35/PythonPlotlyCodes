@@ -31,4 +31,4 @@ plt.bar(X+0.35,Y2,width = 0.20,facecolor = 'yellowgreen',edgecolor = 'white')
 #edgecolor是边框的颜色
 #想把一组数据打到下边，在数据前使用负号
 fig = plt.gcf()
-plot_url = pympl(fig,filename=r'E:/tmp/bar_1.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/bar_1.html', show_link=False,resize=True)

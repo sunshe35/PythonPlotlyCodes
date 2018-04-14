@@ -39,4 +39,4 @@ plt.xlabel('数量')
 #添加标签
 plt.ylabel('y2 值')
 #添加y轴名称
-plot_url = pympl(fig,filename=r'E:/tmp/subplot_1.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/subplot_1.html', show_link=False,resize=True)

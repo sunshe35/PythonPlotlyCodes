@@ -30,4 +30,4 @@ plt.subplot(212)
 #添加子图
 plt.plot(np.cos(2*np.pi*t2), 'r--')
 
-plot_url = pympl(fig,filename=r'E:/tmp/subplot_2.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/subplot_2.html', show_link=False,resize=True)

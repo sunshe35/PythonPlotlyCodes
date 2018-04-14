@@ -1,8 +1,6 @@
 # 2.5-1 基本示例
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 # Basic Line
 pyplt = py.offline.plot

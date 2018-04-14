@@ -1,8 +1,6 @@
 # 2.5-2 应用案例
-import pandas as pd
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 
 # Average High and Low Temperatures in New York
 # Add data

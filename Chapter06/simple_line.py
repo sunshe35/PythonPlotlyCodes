@@ -36,4 +36,4 @@ ax.plot(x, y)
 
 
 
-plot_url = pympl(fig,filename=r'E:/tmp/simple_line.html', show_link=False,resize=True)
+plot_url = pympl(fig,filename=r'tmp/simple_line.html', show_link=False,resize=True)

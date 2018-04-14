@@ -11,5 +11,5 @@ trace1 = Scatter(
 )
 data = Data([trace0, trace1])
 
-py.offline.plot(data, filename = 'first_offline_start')
+py.offline.plot(data, filename = 'first_offline_start.html')
 

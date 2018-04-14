@@ -1,7 +1,6 @@
 # 2.9-3 应用案例
 import plotly as py
 import plotly.graph_objs as go
-import numpy as np
 # Data
 data_1 = go.Scatter(
     x = ['基金1', '基金2', '基金3', '基金4','基金5'],
